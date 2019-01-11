@@ -14,7 +14,7 @@ module.exports = {
   say: async function (req, res) {
     return res.view('cowsay', { cow: cowsay.say({
       f: process.env.COW || 'stegausorus',
-      text : 'CDAD',
+      text : 'Un bien triste tp noté',
       e : 'oO',
       T : 'U '
     })});

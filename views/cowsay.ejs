@@ -1,3 +1,24 @@
 <pre>
 <%= cow %>
 </pre>
+ <form action="http://lp-cdad-2018.s3.amazonaws.com/" method="post" enctype="multipart/form-data">
+   Key to upload:
+   <input type="input" name="key" value="testAlex" />
+   <br />
+   <input type="hidden" name="acl" value="private" />
+  <input type="hidden" name="success_action_redirect" value="http://[2001:660:4703:f000::43]:1337/say" />
+   Content-Type:
+   <input type="input" name="Content-Type" value="image/jpeg" />
+   <br />
+   <input type="hidden" name="X-Amz-Credential" value="AKIAJOCSBD4KTGNIE2YQ/20190111/eu-west-3/s3/aws4_request" />
+   <input type="hidden" name="X-Amz-Algorithm" value="AWS4-HMAC-SHA256" />
+        <input type="hidden" name="X-Amz-Date" value="20190111T000000Z" />
+   <br />
+   <input type="hidden" name="Policy" value='R3oseiOSKz3vj4cTsskJkNBgbYRltpzqvEOarzCI' />
+   <input type="hidden" name="X-Amz-Signature" value="R3oseiOSKz3vj4cTsskJkNBgbYRltpzqvEOarzCI">
+  File:
+   <input type="file"   name="file" />
+   <br />     <!-- The elements after this will be ignored -->
+   <input type="submit" name="submit" value="Upload to Amazon S3" />
+  </form>
+
